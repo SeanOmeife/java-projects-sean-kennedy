@@ -10,5 +10,9 @@ public class TestRunner {
         CombinedExamples.testLogicalAnd();
         CombinedExamples.testLogicalOr();
         CombinedExamples.testRelational();
+        CombinedExamples.testTernary();
+        CombinedExamples.compoundAssignment();
+        CombinedExamples.widening();
+
     }
 }

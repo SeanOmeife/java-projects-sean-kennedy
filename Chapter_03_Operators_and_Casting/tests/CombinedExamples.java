@@ -59,4 +59,38 @@ public class CombinedExamples {
         System.out.println(x < y);  // true
         System.out.println(x <= y); // true
     }
+
+    public static void testTernary(){
+        System.out.println("\nTernary Operator Results:");
+        int x = 5;
+        String s = x % 2 == 0 ? " is an even number" : " is an odd number";
+        System.out.println(x + s);
+    }
+
+    public static void compoundAssignment(){
+        // byte b1 = 3, b2 = 4;
+        // b1 = (byte)(b1 + b2);
+        // b1 += b2;
+
+        // simple expression
+        int x = 2;
+        x *= 2 + 5;
+        System.out.println(x);
+
+        // Slightly complex
+        int k=1;
+        k += (k=4) * (k+2);
+        System.out.println(k);
+    }
+
+    public static void widening(){
+        System.out.println("\nFloat: " + Float.MAX_VALUE);
+        System.out.println("Float: " + Float.MIN_VALUE);
+        System.out.println(Long.MAX_VALUE);
+        System.out.println(Long.MIN_VALUE);
+    }
 }
+
+// ? (Ternary operator):
+//The ? is part of the ternary operator, which is a shorthand for an if-else statement.
+//The syntax is: condition ? value_if_true : value_if_false.
