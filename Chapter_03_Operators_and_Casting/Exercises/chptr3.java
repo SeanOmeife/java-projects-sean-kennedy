@@ -21,14 +21,30 @@ public class chptr3 {
         System.out.println(result);
     }
 
-    public static void maxCapacity(int capacity){
-        
+    public static void maxCapacity(int capacity, int currentVisitors){
+        boolean f = currentVisitors >= capacity;
+        String g = "Max capacity reached: ";
+        System.out.println(g + f);
+    }
+
+    public static void dinoAgeCheck(int age1, int age2){
+        // int ageDiff = age1 - age2;
+        int ageDiff = age1 > age2 ? age1 - age2 : age2 - age1;
+        System.out.println("The age difference between the both dinosaurs is " + ageDiff + " years");
+    }
+
+    public static void safetyCheck(int threshold, int currentRating){
+        boolean k = currentRating > threshold;
+        String result = k ? "Safety rating is above threshold: true ": "Safety rating is below threshold: false ";
+        System.out.println(result);
     }
 
     public static void main(String[] args){
         chptr3.calculateAverageWeight(7000, 9000); //Example weight in kilograms
         chptr3.properNutrition(8000); // Example weight in kilograms
         chptr3.checkLeapYear(2025);
-        chptr3.maxCapacity(0);;
+        chptr3.maxCapacity(3000, 9000);
+        chptr3.dinoAgeCheck(350, 290);
+        chptr3.safetyCheck(100, 50);
     }
 }
